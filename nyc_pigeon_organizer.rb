@@ -33,24 +33,24 @@ require 'pp'
 end
 
 
-def nyc_pigeon_organizer(data)
-  new_hash = {}
-	  data.each do |attribute, hash|
-    hash.each do |key, array|
-      array.each do |name|
-        if !new_hash.has_key?(name)
-          new_hash[name] = {}
-        end
-        if !new_hash[name].has_key?(attribute)
-          new_hash[name][attribute] = []
-        end
-        if !new_hash[name][attribute].include?(key)
-          new_hash[name][attribute] << key.to_s
-        end
-      end
-    end
-  end
-  pp new_hash
-  new_hash
-end
-nyc_pigeon_organizer(pigeon_data)
+#def nyc_pigeon_organizer(data)
+#  new_hash = {}
+#	  data.each do |attribute, hash|
+#    hash.each do |key, array|
+#      array.each do |name|
+#        if !new_hash.has_key?(name)
+#          new_hash[name] = {}
+#        end
+#        if !new_hash[name].has_key?(attribute)
+#          new_hash[name][attribute] = []
+#        end
+#        if !new_hash[name][attribute].include?(key)
+#          new_hash[name][attribute] << key.to_s
+#        end
+#      end
+#    end
+#  end
+#  pp new_hash
+#  new_hash
+#end
+#nyc_pigeon_organizer(pigeon_data)
