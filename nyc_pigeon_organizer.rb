@@ -20,7 +20,7 @@ require 'pp'
 
 def nyc_pigeon_organizer(data)
   new_hash = {}
-end 	  data.each do |attribute, hash|
+	  data.each do |attribute, hash|
     hash.each do |key, array|
       array.each do |name|
         if !new_hash.has_key?(name)
