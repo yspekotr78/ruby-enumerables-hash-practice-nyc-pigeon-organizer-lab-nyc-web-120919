@@ -34,23 +34,23 @@ end
 
 
 #def nyc_pigeon_organizer(data)
-#  new_hash = {}
+#  organized_pigeons = {}
 #	  data.each do |attribute, hash|
 #    hash.each do |key, array|
 #      array.each do |name|
-#        if !new_hash.has_key?(name)
-#          new_hash[name] = {}
+#        if !organized_pigeons.has_key?(name)
+#          organized_pigeons[name] = {}
 #        end
-#        if !new_hash[name].has_key?(attribute)
-#          new_hash[name][attribute] = []
+#        if !organized_pigeons[name].has_key?(attribute)
+#          organized_pigeons[name][attribute] = []
 #        end
-#        if !new_hash[name][attribute].include?(key)
-#          new_hash[name][attribute] << key.to_s
+#        if !organized_pigeons[name][attribute].include?(key)
+#          organized_pigeons[name][attribute] << key.to_s
 #        end
 #      end
 #    end
 #  end
-#  pp new_hash
-#  new_hash
+#  pp organized_pigeons
+#  organized_pigeons
 #end
 #nyc_pigeon_organizer(pigeon_data)
