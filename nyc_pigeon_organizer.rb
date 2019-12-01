@@ -34,6 +34,4 @@ end 	  data.each do |attribute, hash|
     end
   end
   new_hash
-  
-  pp data
 end
